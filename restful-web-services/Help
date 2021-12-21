@@ -1,0 +1,31 @@
+HAL Explorer -
+http://localhost:8080
+Entering above URL navigates to below URL
+http://localhost:8080/explorer/index.html#uri=/
+
+Swagger UI -
+http://localhost:8080/swagger-ui.html
+Entering above URL navigates to below URL
+http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config
+
+Actuator -
+http://localhost:8080/actuator
+
+API Docs -
+http://localhost:8080/v3/api-docs
+
+Spring security-
+Use basic auth in postman
+Username - user
+Password - 6730c6c7-178f-4bd0-9121-4c1de8f1a4e8
+
+Database H2 -
+http://localhost:8080/h2-console
+
+
+
+Thymeleaf -
+http://localhost:8080/
+http://localhost:8080/menu
+http://localhost:8080/save
+http://localhost:8080/ajaxPage?ajaxId=1

@@ -1,0 +1,17 @@
+http://localhost:8000/currency-exchange/from/USD/to/INR
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
+
+Database H2 -
+http://localhost:8000/h2-console
+
+
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+
+Run below maven goal to create docker image from this service -
+mvn spring-boot:build-image -DskipTests
+/Users/ravi.agrawal/Softwares/apache-maven-3.8.1/bin/mvn spring-boot:build-image -DskipTests
+
+in28Mins GitHub Url - https://github.com/in28minutes/spring-microservices-v2

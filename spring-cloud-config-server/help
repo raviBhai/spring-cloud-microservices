@@ -1,0 +1,6 @@
+Requesting app name - limits-service
+Requesting app profile - default
+Url - http://localhost:8888/limits-service/default
+Above url hits config server to give config properties for requesting app name and profile
+
+in28Mins GitHub Url - https://github.com/in28minutes/spring-microservices-v2

@@ -1,0 +1,17 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<table>
+    <tr>
+        <td><h4>Team Name: </h4></td>
+        <td><h4 th:text="${team.name}"></h4></td>
+    </tr>
+    <tr>
+        <td><h4>Dept name: </h4></td>
+        <td><h4 th:text="${team.department}"></h4></td>
+    </tr>
+</table>
+<div class="container">
+    <p>
+        <a th:href="@{/menu}"> Go to Index page</a>
+    </p>
+</div>
+</html>

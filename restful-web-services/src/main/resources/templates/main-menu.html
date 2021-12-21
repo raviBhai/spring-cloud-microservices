@@ -1,0 +1,30 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Index Page</title>
+</head>
+<body>
+<form action="save" method="post">
+  <table>
+    <tr>
+      <td><label for="name">Team Name</label></td>
+      <td><input type="text" name="name"></input></td>
+    </tr>
+    <tr>
+      <td><label for="department">Team Department</label></td>
+      <td><input type="text" name="department"></input></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Submit"></input></td>
+    </tr>
+  </table>
+</form>
+<br/>
+<a th:href="@{/ajaxPage(ajaxId=${randomId})}"> Random id [[${randomId}]]</a>
+<br/>
+<th:block th:each="userId: ${userIds}">
+  <a th:href="@{/ajaxPage(ajaxId=${userId})}"> User [[${userId}]]</a> <br/>
+</th:block>
+<br/>
+</body>
+</html>

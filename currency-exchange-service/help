@@ -1,0 +1,27 @@
+http://localhost:8000/currency-exchange/from/USD/to/INR
+
+http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
+Currently, instance of CurrencyExchangeServiceApplication will run on port 8000.
+To launch another instance of CurrencyExchangeServiceApplication on different port - 8001 -
+    1. go to Edit Configurations (drop down just beside the build hammer icon in intellij)
+    2. click plus button to add new Spring Boot config.
+    3. Rename this config to CurrencyExchangeServiceApplication8001
+    4. Under Configuration tab, copy Main class name from CurrencyExchangeServiceApplication
+    5. Under Environments -> VM Options -> add this ->  -Dserver.port=8001
+    6. Run
+
+
+Database H2 -
+http://localhost:8000/h2-console
+
+
+http://localhost:8000/currency-exchange/from/AUD/to/INR
+
+Run below maven goal to create docker image from this service -
+mvn spring-boot:build:image -DskipTests
+
+Run docker container using above image -
+docker run -p 8000:8000 ravibhai/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+
+in28Mins GitHub Url - https://github.com/in28minutes/spring-microservices-v2
